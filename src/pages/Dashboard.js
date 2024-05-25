@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { jwtDecode } from "jwt-decode";
-import { Navigate } from 'react-router-dom';
 
 const Dashboard = (req, res) => {
 
