@@ -10,7 +10,7 @@ const Register = () => {
     const handleRegister = async (e)=>{
         e.preventDefault();
 
-        const response = await fetch('http://localhost:6001/api/register', {
+        const response = await fetch('https://deploy-mern-ali/api/register', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"
