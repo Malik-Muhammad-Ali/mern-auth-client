@@ -9,7 +9,7 @@ const Dashboard = (req, res) => {
   const [tempQuote, setTempQuote] = useState("");
 
   const populateQuote = async () => {
-    const response = await fetch("http://localhost:6001/api/quote", {
+    const response = await fetch("https://deploy-mern-ali/api/quote", {
       method: "GET",
       headers: {
         "x-access-token": localStorage.getItem("token"),
@@ -36,7 +36,7 @@ const Dashboard = (req, res) => {
   const handleUpdateQuote = async (e)=>{
     e.preventDefault();
 
-    const response = await fetch('http://localhost:6001/api/quote', {
+    const response = await fetch('https://deploy-mern-ali/api/quote', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
